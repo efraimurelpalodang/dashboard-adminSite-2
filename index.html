@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- tailwindcss -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+  <title>AdminSite</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-100">
+  <!-- start -->
+  <div class="min-w-full min-h-full">
+    <!-- sidebar start -->
+      <section class="bg-white max-w-55 min-h-screen p-3">
+        <div class="flex flex-col gap-10">
+          <!-- logo -->
+          <div class="logo flex gap-x-5 text-blue-600">
+            <i class="bi bi-apple text-2xl"></i>
+            <h1 class="text-xl mt-1.5 font-bold">AdminSide</h1>
+          </div>
+
+          <!-- section -->
+          <ul class="text-slate-800">
+            <li class="bg-blue-600 text-white px-5 py-2 rounded-lg">
+              <a href="#" class="flex gap-x-4">
+                <i class="bi bi-grid-fill"></i>
+                <!-- <i class="bi bi-layout-wtf"></i> -->
+                <p>Dashboard</p>
+              </a>
+            </li>
+
+            <li class="font-bold text-slate-400 text-sm mt-5 mb-3">MAIN</li>
+            <li class="px-5 py-2">
+              <a href="" class="flex gap-x-4 items-center">
+                <i class="bi bi-folder"></i>
+                <p class="flex-initial w-35">Elements</p>
+                <i class="bi bi-chevron-right text-[.7em]"></i>
+              </a>
+
+              <!-- sub list start-->
+              <ul>
+                <li></li>
+              </ul>
+              <!-- sub list end-->
+              
+            </li>
+            <li class="px-5 py-2">
+              <a href="" class="flex gap-x-4 items-center">
+                <i class="bi bi-clipboard-fill"></i>
+                <p>Charts</p>
+              </a>
+            </li>
+            <li class="px-5 py-2">
+              <a href="" class="flex gap-x-4 items-center">
+                <i class="bi bi-grid-1x2-fill"></i>
+                <p>Widgets</p>
+              </a>
+            </li>
+
+            <li class="font-bold text-slate-400 text-sm mt-8 mb-3">TABLE AND FORMS</li>
+
+            <li class="px-5 py-2">
+              <a href="" class="flex gap-x-4 items-center">
+                <i class="bi bi-table"></i>
+                <p>Tables</p>
+              </a>
+            </li>
+            <li class="px-5 py-2">
+              <a href="" class="flex gap-x-4 items-center">
+                <i class="bi bi-textarea-resize"></i>
+                <p class="flex-initial w-35">Forms</p>
+                <i class="bi bi-chevron-right text-[.7em]"></i>
+              </a>
+
+              <!-- sub list start-->
+              <ul>
+                <li></li>
+              </ul>
+              <!-- sub list end-->
+              
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+    <!-- sidebar finish -->
+  </div>
+  <!-- finish -->
+</body>
+</html>

@@ -1,106 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- tailwindcss -->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <!-- icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
-  <title>AdminSite</title>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
-</head>
-<body class="bg-slate-100">
-  <!-- start -->
-  <div class="grid grid-cols-5 min-h-screen max-h-screen gap-x-2">
-    <!-- start sidebar -->
-    <aside class="col-auto px-4 pt-2 flex flex-col gap-y-10">
-      <!-- logo -->
-      <a href="#" class="flex items-center gap-x-6 text-blue-600">
-        <i class="bi bi-tencent-qq text-2xl"></i>
-        <h1 class="text-2xl font-bold">AdminSite</h1>
-      </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwindcss -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css" />
+    <title>AdminSite</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-slate-100">
+    <!-- start -->
+    <div class="">
+      <!-- start sidebar -->
+      <aside class="px-4 pt-2 flex flex-col gap-y-10 fixed left-0 top-0 bottom-0 overflow-y-auto bg-red-300">
+        <!-- logo -->
+        <a href="#" class="flex items-center gap-x-6 text-blue-600">
+          <i class="bi bi-tencent-qq text-2xl"></i>
+          <h1 class="text-2xl font-bold">AdminSite</h1>
+        </a>
 
-      <ul>
-        <li>
-          <a href="#" class="flex px-5 py-2 items-center gap-x-5 rounded-lg bg-blue-600 text-white">
-            <i class="bi bi-grid-fill text-sm"></i>
-            <p>Dashboard</p>
-          </a>
-        </li>
+        <ul class="pb-10">
+          <li>
+            <a href="#" class="flex px-5 py-2 items-center gap-x-5 rounded-lg bg-blue-600 text-white">
+              <i class="bi bi-grid-fill text-sm"></i>
+              <p>Dashboard</p>
+            </a>
+          </li>
 
-        <li class="text-slate-400 font-bold text-sm">MAIN</li>
-        
-        <li>
-          <a href="#" class="flex px-5 py-2 items-center gap-x-5 rounded-lg hover:bg-slate-200">
-            <i class="bi bi-grid-fill text-lg"></i>
-            <p>Dashboard</p>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="flex px-5 py-2 items-center gap-x-5 rounded-lg hover:bg-slate-200">
-            <i class="bi bi-grid-fill text-lg"></i>
-            <p>Dashboard</p>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="flex px-5 py-2 items-center gap-x-5 rounded-lg hover:bg-slate-200">
-            <i class="bi bi-grid-fill text-lg"></i>
-            <p>Dashboard</p>
-          </a>
-        </li>
+          <li class="text-slate-400 font-bold text-sm mt-5">MAIN</li>
 
-        <li class="text-slate-400 font-bold text-sm">TABLES AND FORMS</li>
+          <li>
+            <a href="#" class="flex px-5 py-2 items-center gap-x-5 rounded-lg hover:bg-slate-200">
+              <i class="bi bi-dropbox"></i>
+              <p>Elements</p>
+              <i class="bi bi-chevron-right text-sm ml-10"></i>
+            </a>
 
-        <li>
-          <a href="#" class="flex px-5 py-2 items-center gap-x-5 rounded-lg hover:bg-slate-200">
-            <i class="bi bi-grid-fill text-lg"></i>
-            <p>Dashboard</p>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="flex px-5 py-2 items-center gap-x-5 rounded-lg hover:bg-slate-200">
-            <i class="bi bi-grid-fill text-lg"></i>
-            <p>Dashboard</p>
-          </a>
-        </li>
-      </ul>
-      
-    </aside>
-    <!-- end sidebar -->
-    <main class="bg-green-600 col-span-4">
-    
-    </main>
-  </div>
-  <!-- finish -->
-</body>
+            <!-- sub list start-->
+            <ul class="ml-14 flex flex-col gap-y-3">
+              <li><a href="#">Alert</a></li>
+              <li><a href="#">Badges</a></li>
+              <li><a href="#">Breadcrumbs</a></li>
+              <li><a href="#">Button</a></li>
+            </ul>
+            <!-- sub list end-->
+            
+          </li>
+          <li>
+            <a href="#" class="flex px-5 py-2 items-center gap-x-5 rounded-lg hover:bg-slate-200">
+              <i class="bi bi-pie-chart"></i>
+              <p>Charts</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex px-5 py-2 items-center gap-x-5 rounded-lg hover:bg-slate-200">
+              <i class="bi bi-columns-gap"></i>
+              <p>Widgets</p>
+            </a>
+          </li>
+
+          <li class="text-slate-400 font-bold text-sm mt-5">TABLES AND FORMS</li>
+
+          <li>
+            <a href="#" class="flex px-5 py-2 items-center gap-x-5 rounded-lg hover:bg-slate-200">
+              <i class="bi bi-table"></i>
+              <p>Tables</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex px-5 py-2 items-center gap-x-5 rounded-lg hover:bg-slate-200">
+              <i class="bi bi-ui-checks-grid"></i>
+              <p>Forms</p>
+              <i class="bi bi-chevron-right text-sm ml-10"></i>
+            </a>
+
+            <!-- sub list start-->
+            <ul class="ml-14 flex flex-col gap-y-3">
+              <li><a href="#">Basic</a></li>
+              <li><a href="#">Select</a></li>
+              <li><a href="#">Checkbox</a></li>
+              <li><a href="#">Radio</a></li>
+            </ul>
+            <!-- sub list end-->
+            
+          </li>
+        </ul>
+      </aside>
+      <!-- end sidebar -->
+      <main class="col-span-4"></main>
+    </div>
+    <!-- finish -->
+  </body>
 </html>
-
-<!-- sub list start-->
-<ul>
-  <li>Basic</li>
-  <li>Select</li>
-  <li>Checkbox</li>
-  <li>Radio</li>
-</ul>
-<!-- sub list end-->
-
-
-<!-- sub list start-->
-<ul>
-  <li>Alert</li>
-  <li>Badges</li>
-  <li>Breadcrumbs</li>
-  <li>Button</li>
-</ul>
-<!-- sub list end-->
